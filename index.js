@@ -1,5 +1,5 @@
-import express from 'express';
-import fetch from 'node-fetch';
+const express = require('express');
+const fetch = require('node-fetch');
 
 const app = express();
 const PORT = process.env.PORT || 10000;
@@ -33,5 +33,5 @@ app.post('/', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Proxy server running on port ${PORT}`);
+  console.log(`Proxy server running on http://localhost:${PORT}`);
 });
